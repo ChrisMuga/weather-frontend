@@ -90,10 +90,19 @@
                                 <!-- Number badge -->
                                 <span class="mdl-badge" v-bind:data-badge="x.temperature"><h2 class="mdl-card__title-text">{{x.city}}</h2></span>
                             </div>
+
                             <div class="mdl-card__supporting-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Aenan convallis.
+
+                                <span class="mdl-chip humidity">
+                                    <span class="mdl-chip__text">Humidity: {{x.humidity}} </span>
+                                </span>
+
+                                <span class="mdl-chip pressure">
+                                    <span class="mdl-chip__text">Pressure: {{x.pressure}} </span>
+                                </span>
+    
                             </div>
+
                             <div class="mdl-card__actions mdl-card--border">
                                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                 More Details
