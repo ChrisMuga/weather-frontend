@@ -165,6 +165,12 @@
     
                             </div>
                          
+                          
+                            <!-- Simple MDL Progress Bar -->
+                            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+ 
+
                         </div>
         
                         <!-- cell -->
@@ -193,18 +199,24 @@
 
     <script>
         new Vue({
-  el: '#app',
-  data () {
-    return {
-      info: null
-    }
-  },
-  mounted () {
-    axios
-      .get('http://127.0.0.1:8000/')
-      .then(response => (this.info = response.data))
-  }
-})
+        el: '#app',
+        data () {
+            return {
+            info: null
+            }
+        },
+
+        mounted () {
+            axios
+            .get('http://127.0.0.1:8000/')
+            .then(
+                response => (this.info = response.data)
+                )
+        }
+        });
+
+
+        
     </script>
     </body>
 </html>
