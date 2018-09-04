@@ -91,7 +91,18 @@
         
                         <div class="mdl-cell mdl-cell--3-col center">
                            
-                            <h3>Data Found</h3>
+                            <img src="img/found.png" id="found" />
+
+                            <div class="mdl-tooltip" data-mdl-for="found">
+                                
+                                <!-- Contact Chip -->
+                                <span class="mdl-chip mdl-chip--contact">
+                                    <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">!</span>
+                                    <span class="mdl-chip__text">Data Successfully Fetched</span>
+                                </span>
+    
+                            </div>
+
                         </div>
         
                         <!-- cell -->
@@ -144,7 +155,7 @@
                 </div>
                 <!-- else -->
                 <div v-else>
-                    
+
                     <!-- row -->
 
                     <div class="mdl-grid center-items">
@@ -153,7 +164,18 @@
         
                         <div class="mdl-cell mdl-cell--3-col center">
                            
-                            <h3>No Data Found</h3>
+                            <img src="img/missing.png" id="missing" />
+
+                            <div class="mdl-tooltip" data-mdl-for="missing">
+
+                                <!-- Contact Chip -->
+                                <span class="mdl-chip mdl-chip--contact">
+                                    <span class="mdl-chip__contact mdl-color--red mdl-color-text--white">?</span>
+                                    <span class="mdl-chip__text">No Data Found</span>
+                                </span>
+    
+                            </div>
+                         
                         </div>
         
                         <!-- cell -->
