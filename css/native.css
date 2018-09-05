@@ -4,4 +4,5 @@
 .humidity{background: #536dfe;}
 .pressure{background: #1de9b6;}
 .temperature{background: #e45ed9;}
+.mdl-chip{margin-left: 10px; margin-right: 10px;}
 #p2{margin-top: 20px;}
